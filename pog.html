@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--links the css file to this one-->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class= "text1">
+    <h1>Hello</h1>
+    <p>You are pog</p>
+    <div>
+        <img src="https://media.tenor.com/images/189af488226d0c4ec8e88119d26631a6/tenor.gif">
+    </div>
+    <div>
+        <button class= "pog" onclick="window.location.href='https://youtube.com/watch?v=dQw4w9WgXcQ';">
+            Click Here to be even more pog.</button>
+        <button onclick="setHalfVolume()" type = 'button'>Lower Volume</button>
+        <div>
+            <button onclick="getVolume()" type="buton">Get Volume</button>
+        </div>
+    
+    
+    </div>
+    <!--Audio source for website-->
+    <audio id = "music" controls>
+        
+        <source src="music.mp3" type="audio/mpeg">
+        
+        
+        
+        <!--JS for adjusting video volume -->
+        <script>
+            var aud = document.getElementById("music");
+            
+            //gets the volume and displays it as a prompt
+            function getVolume(){
+                alert(aud.volume)
+            }
+
+            function setHalfVolume(){
+                aud.volume = 0.1;
+            }
+        </script>
+        
+   
+</body>
+</html>

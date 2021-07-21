@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    
+    <!--links the css file to this one-->
+    <link rel="stylesheet" href="index.css">
+</head>
+   
+
+<body class= "cursor">
+    <h1 class="h1">Please Enter these Personal Details</h1>
+    <h2 class="h2">Hello my name is Jeff</h2>
+    <p class="text"> Hello </p>
+    <!--basic form code, action is where form submits, method=Get, is when the html gets all the requests-->
+    <form action="results.html" method="GET" enctype="multipart/form-data">
+        <div>
+            <label class="nameText" for='name'>Name</label> <!--highlights the label-->
+            <input type='text' name="name" id='name' required> 
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+            <!--Age input-->
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" min="1" max="200" step="1">
+        </div>
+        <div>
+            <!--Date form-->
+            <label for="date">Birthdate</label>
+            <input type="date" name="date" id="date" min="2019-06-10">
+        </div>
+        <div>
+            <!--Checkbox-->
+            Favorite Food
+            <div>
+                <label for="banana">Banana</label>
+                <input type="checkbox" name="banana" id="banana">
+            </div>
+            <div>
+                <label for="kiwi">Kiwi</label>
+                <input type="checkbox" name="kiwi" id="kiwi">
+            </div>
+        </div>
+        <div>
+            Gender <!--radio button only lets us choose one thing-->
+            <div>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" value="male">
+            </div>
+            <div>
+                <label for="Female">Female</label>
+                <input type="radio" name="gender" id="Female" value="female">
+            </div>
+        </div>
+        <div>
+            <label for="eyeColor">Eye Color</label>
+            <select name="eyeColor" id="eyeColor">
+                <option value="Green">Green</option>
+                <option label="Blue" value="blue"></option>  
+            </select>
+        </div>
+        <div>
+            <!--Lets us type a biography because there are no default values written-->
+            <label for="bio">Bio</label>
+            <textarea id="bio" name="bio"></textarea>
+        </div>
+        <!--hidden input here-->
+        <input type="hidden" name="hidden" value="hi">
+        <div>
+            <!--File input-->
+            <label for="file">File</label>
+            <input id="file" type="file" name="file"> 
+        </div>
+        <div>
+            <label>Password</label>
+            <input name='password' type='password' required>
+        </div>
+        
+        
+        <!--all buttons are contained here-->    
+        <button type = "reset">Reset</button>
+        <button type='submit'>Submit</button>
+        <button class= "pog" onclick="window.location.href='pog.html';">
+            Click Here to be pog.</button>
+        <div>
+            <img src="https://media.giphy.com/media/Up7tmgmWUQ8V2x2LNC/giphy.gif">
+        </div>
+
+        
+    </form>
+</body>
+</html>

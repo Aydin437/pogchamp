@@ -1,0 +1,68 @@
+:root{
+
+    background-image:url("hero.jpg");
+    background-repeat: no-repeat;
+    background-size: 1920px, 1080px;
+    cursor: url("Cursor.cur"), auto;
+    
+    
+    
+    
+    
+}
+
+.h1{
+    position:relative;
+    color:aqua;
+    animation-name: h1;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+}
+
+.h2{
+    color:crimson;
+}
+
+.text{
+
+    
+    
+    
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.nameText{
+
+    color:red;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    animation-name: nameText;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}   
+
+@keyframes h1{
+    0%{background: fuchsia;}
+    25%{background: gold;}
+
+}
+
+@keyframes nameText {
+
+    0%{background: aqua;}
+    10%{background: brown;}
+
+    
+}
+
+
+    
+
+
+.text1{
+
+    text-align: center;
+    
+}
+
+
